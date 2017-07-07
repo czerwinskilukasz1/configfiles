@@ -1,0 +1,21 @@
+source ~/.git_prompt.sh
+
+# Colors:
+thinblue="\[$(tput setaf 6)\]"
+thickcyan="\[\e[1;36m\]"
+thickblue="\[\e[1;34m\]"
+yellow="\[\e[1;33m\]"
+darkyellow="\[\e[33m\]"
+darkred="\[\e[31m\]"
+bold="\[$(tput bold)\]"
+normal="\[$(tput sgr0)\]"
+
+# Several examples of prompts created by me.
+alias promptnormal='PS1="\u@\h \w\$"'
+alias huh='PS1="\[$(tput bold)\]huh? \[$(tput sgr0)\]"'
+alias promptmaster='PS1="\[$(tput bold)\]Yes, master? \[$(tput sgr0)\]"'
+alias prompt2master='PS1="\[\e[1;34m\]\u@\h: \w\[$(tput sgr0)\]\$(__git_ps1)\n\[\e[1;36m\]Yes, master? \[\e[0m\]"'
+alias promptgit='PS1="$darkred\w$yellow\$(__git_ps1)$darkred\$$normal "'
+
+# Sets the prompt.
+promptgit
