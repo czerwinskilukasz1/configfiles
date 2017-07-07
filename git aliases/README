@@ -5,3 +5,6 @@ Steps:
 1. Paste text from .bashrc at the end of your .bashrc file.
 2. Copy .git_aliases to your profile directory.
 3. Restart shell (run /bin/bash or log out and log in).
+
+
+Files based on Jan Warchol's previous version of dotfiles.

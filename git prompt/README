@@ -8,3 +8,4 @@ Steps:
 
 Now you should see a colorful prompt in every directory and a repo-/branch-specific info when you enter a directory managed by Git.
 
+Files based on Jan Warchol's previous version of dotfiles.
