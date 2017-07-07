@@ -1,0 +1,18 @@
+
+# GNU screen
+alias x='screen -x'
+alias l='screen -ls'
+
+# Disk usage - subdirectories sorted by size (desc)
+alias d='du --max-depth=1 . | sort -rn'
+
+# apt
+alias i='sudo apt-get install'
+alias iy='sudo apt-get install -y'
+alias ud='sudo apt-get update'
+alias ug='sudo apt-get upgrade'
+alias ugy='sudo apt-get upgrade -y'
+alias udg='ud && ug'
+alias udgy='ud && ugy'
+alias s='apt-cache search'
+alias sn='apt-cache search -n'
