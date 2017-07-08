@@ -1,0 +1,11 @@
+== Monitoring ==
+
+htop - CPU / memory  (better than top)
+iotop - disk
+slurm - network interface (colorful output)
+
+
+== Productivity ==
+
+screen - detachable terminals
+
