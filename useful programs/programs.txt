@@ -2,7 +2,9 @@
 
 htop - CPU / memory  (better than top)
 iotop - disk
-slurm - network interface (colorful output)
+slurm - network interface (colorful output, shows upload/download speed)
+tcptrack - network speed per TCP connection
+nethogs - network speed per process
 
 
 == Productivity ==
