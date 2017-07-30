@@ -56,10 +56,17 @@ alias glod='git log --oneline --decorate'
 alias glod,='git log --oneline --decorate | less -R -S'
 alias glog='git log --oneline --graph'
 alias glog,='git log --oneline --graph | less -R -S'
-alias glodg='git log --color=always --decorate --graph --date=relative --format=tformat:"%C(auto)%h%C(reset) -%C(auto)%d%C(reset) %s %C(white)- %an, %ad%C(reset)"'
-alias glodga='git log --color=always --decorate --graph --date=relative --format=tformat:"%C(auto)%h%C(reset) -%C(auto)%d%C(reset) %s %C(white)- %an, %ad%C(reset)" --branches --remotes'
-alias glodg,='git log --color=always --decorate --graph --date=relative --format=tformat:"%C(auto)%h%C(reset) -%C(auto)%d%C(reset) %s %C(white)- %an, %ad%C(reset)" | less -R -S'
-alias glodga,='git log --color=always --decorate --graph --date=relative --format=tformat:"%C(auto)%h%C(reset) -%C(auto)%d%C(reset) %s %C(white)- %an, %ad%C(reset)" --branches --remotes | less -R -S'
+alias glodg='git log --oneline --decorate --graph'
+alias glodga='git log --oneline --decorate --graph --all'
+alias glodg,='git log --oneline --decorate --graph | less -R -S'
+alias glodga,='git log --oneline --decorate --graph --all | less -R -S'
+
+# With additional date
+alias glodgd='git log --color=always --decorate --graph --date=relative --format=tformat:"%C(auto)%h%C(reset) -%C(auto)%d%C(reset) %s %C(white)- %an, %ad%C(reset)"'
+alias glodgad='git log --color=always --decorate --graph --date=relative --format=tformat:"%C(auto)%h%C(reset) -%C(auto)%d%C(reset) %s %C(white)- %an, %ad%C(reset)" --all'
+alias glodgd,='git log --color=always --decorate --graph --date=relative --format=tformat:"%C(auto)%h%C(reset) -%C(auto)%d%C(reset) %s %C(white)- %an, %ad%C(reset)" | less -R -S'
+alias glodgad,='git log --color=always --decorate --graph --date=relative --format=tformat:"%C(auto)%h%C(reset) -%C(auto)%d%C(reset) %s %C(white)- %an, %ad%C(reset)" --all | less -R -S'
+
 
 # alias glos='git log --oneline --stat'
 # alias glos,='git log --oneline --stat | less -R -S'
@@ -77,7 +84,7 @@ alias gfmom='gf && gmom'
 
 alias gp='git push'
 
-# alias grb='git rebase'
+# # # alias grb='git rebase'
 
 # alias grba='git rebase --abort'
 # alias grbc='git rebase --continue'
@@ -85,10 +92,15 @@ alias gp='git push'
 # alias gri='git rebase -i'
 # alias grim='git rebase -i master'
 
-# alias grs='git reset'
+# # # alias grs='git reset'
 
 # alias gu='git reset HEAD~1'
 
 alias gst='git status'
 # alias gt='git tag'
 # alias gt,='git tag | less -R -S'
+
+alias gpsu='git push --set-upstream origin $(git symbolic-ref --short HEAD)'
+
+
+
