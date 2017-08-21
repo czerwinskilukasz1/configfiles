@@ -1,0 +1,4 @@
+alias sound='paplay /usr/share/sounds/freedesktop/stereo/complete.oga'
+
+alias cp='rsync -avh --progress'
+
