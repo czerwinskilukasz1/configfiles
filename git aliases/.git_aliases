@@ -35,8 +35,11 @@ alias gci='git commit -e'
 alias gd='git diff'
 alias gd,='git diff | less -R -S'
 
-# alias gdc='git diff --cached'
-# alias gdc,='git diff --cached | less -R -S'
+alias gdc='git diff --cached'
+alias gdc,='git diff --cached | less -R -S'
+
+alias gdw='git diff --word-diff'
+alias gdw,='git diff --word-diff | less -R -S'
 
 alias gdh='git diff HEAD'
 alias gdhom='git diff HEAD origin/master'
