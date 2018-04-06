@@ -87,7 +87,7 @@ alias gfmom='gf && gmom'
 
 alias gp='git push'
 
-# # # alias grb='git rebase'
+alias grb='git rebase'
 
 # alias grba='git rebase --abort'
 # alias grbc='git rebase --continue'
