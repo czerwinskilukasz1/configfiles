@@ -105,5 +105,5 @@ alias gst='git status'
 
 alias gpsu='git push --set-upstream origin $(git symbolic-ref --short HEAD)'
 
-
+alias gpfwl='git push --force-with-lease'
 
