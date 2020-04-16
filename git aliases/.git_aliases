@@ -95,7 +95,7 @@ alias grb='git rebase'
 # alias gri='git rebase -i'
 # alias grim='git rebase -i master'
 
-# # # alias grs='git reset'
+alias grs='git reset'
 
 # alias gu='git reset HEAD~1'
 
