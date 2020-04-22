@@ -1,3 +1,5 @@
+# general
+alias ll='ls -l'
 
 # GNU screen
 alias x='screen -x'
