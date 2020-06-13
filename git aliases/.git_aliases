@@ -107,6 +107,10 @@ alias gpsu='git push --set-upstream origin $(git symbolic-ref --short HEAD)'
 
 alias gpfwl='git push --force-with-lease'
 
+alias gcara='git commit --amend --reset-author'
+alias setauthor='git config user.name "<your name>" && git config user.email "<your email>"'
+alias gfixauthor='setauthor && gcara'
+
 alias gcp='git cherry-pick'
 
 alias gcz='git cz' # for commitizen cli utility, see: https://github.com/commitizen/cz-cli
