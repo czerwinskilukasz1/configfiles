@@ -64,6 +64,9 @@ alias glodga='git log --oneline --decorate --graph --all'
 alias glodg,='git log --oneline --decorate --graph | less -R -S'
 alias glodga,='git log --oneline --decorate --graph --all | less -R -S'
 
+# Usage: glhistory 2581539..HEAD
+alias glhistory='git log --ancestry-path --graph --boundary --oneline'
+
 # With additional date
 alias glodgd='git log --color=always --decorate --graph --date=relative --format=tformat:"%C(auto)%h%C(reset) -%C(auto)%d%C(reset) %s %C(white)- %an, %ad%C(reset)"'
 alias glodgad='git log --color=always --decorate --graph --date=relative --format=tformat:"%C(auto)%h%C(reset) -%C(auto)%d%C(reset) %s %C(white)- %an, %ad%C(reset)" --all'
