@@ -2,6 +2,11 @@
 
 alias g='git'
 
+# make sure git autocompletion function (`_git`) is loaded
+type -t _git >/dev/null || . /usr/share/bash-completion/completions/git
+# use git's autocompletion for g alias
+complete -o default -o nospace -F _git g
+
 alias ga='git add'
 alias gau='git add -u'
 alias ga.='git add .'
